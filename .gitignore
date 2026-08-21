@@ -1,0 +1,23 @@
+# python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# macos
+.DS_Store
+
+# ide
+.vscode/
+.idea/
