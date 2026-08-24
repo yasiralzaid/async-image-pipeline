@@ -26,6 +26,7 @@ The easiest way to run the project is using Docker. You don't need Python or Red
 2. Start the containers:
 ``` 
 docker-compose up --build
+```
 
 3. The API will be available at http://localhost:8000/docs (Swagger UI).
 4. The MinIO console is available at http://localhost:9001 (Credentials: `minioadmin` / `minioadmin`).
