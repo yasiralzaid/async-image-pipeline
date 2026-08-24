@@ -1,6 +1,7 @@
 import os
 import io
 import boto3
+import time
 from celery import Celery
 from PIL import Image
 
@@ -32,6 +33,9 @@ bucket_name = "processed-images"
 
 @celery_app.task
 def process_image_task(filename: str, image_bytes: bytes):
+    # add artificial delay to test polling
+    time.sleep(10)
+    
     # create bucket if it does not exist
     try:
         s3_client.head_bucket(Bucket=bucket_name)
